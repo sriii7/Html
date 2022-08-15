@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>picture element</title>
+ </head>
+ <body>
+  <h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 2000px)" srcset="https://wallpaperaccess.com/full/3612029.jpg">
+  <source media="(min-width: 1650px)" srcset="https://wallpaperaccess.com/full/3611997.jpg">
+  <img src="https://wallpaperaccess.com/full/3612123.jpg" style="width:400px; height:600px ;">
+</picture>
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+ The browser looks for the first source element where the media query matches the user's current viewport width,
+ and fetches the image specified in the srcset attribute.</p>
+
+ </body>
+</html>

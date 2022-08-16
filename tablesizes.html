@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+.table2{
+    border-radius: 10px; 
+    border-color: rgb(68, 91, 22);
+    color:rgb(15, 21, 94);
+    width: 60%;
+    
+}
+.table2 th,.table2 td{
+    border-radius: 20px;
+    background-color: powderblue;
+} 
+.table2 th{
+    border: 2px dashed black;
+    height:50px;
+  
+  color:red;
+  ;
+}
+.table2 td{
+    border: 1px solid blue;
+    text-align: center;
+}
+.table3 td{
+    color:red;
+    text-align: center;
+   border-radius: 50px;
+   background-color:cornflowerblue;
+   height:60px;
+}
+.table3 th{
+    background-color: lightgreen;
+}
+.row1table1 td{
+    height: 25px; 
+    background-color: chocolate;
+    color:white;
+    padding: 60px 20px 10px 5px;
+    
+}
+.row2table1 td{
+   height:60px;
+}
+.row3table1 td{
+  height: 100px;
+  background-color: gold;
+  color:black;
+}
+.table1{
+    height:200px;
+    width: 100%;
+    border-spacing: 50px;
+}
+.table1 th{
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.table1 td{
+    /*color: yellow;
+    background-color: black;*/
+    border-radius: 10px;
+    padding: 5px 10px 20px 60px;
+    
+}
+
+</style>
+</head>
+<body>
+
+<h2>Table borders & Table Sizing & Rowspan-Colspan</h2>
+
+<table class="table1">
+  <tr>
+    <th>Firstname</th><th>Lastname</th><th>Age</th>
+  </tr>
+  <tr class="row1table1">
+    <td>Jill</td><td>Smith</td><td>50</td>
+  </tr>
+  <tr class="row2table1">
+    <td>Eve</td><td>Jackson</td><td>94</td>
+  </tr>
+  <tr class="row3table1">
+    <td>John</td><td>Doe</td><td>80</td>
+  </tr>
+</table>
+<hr>
+<p>table with round borders</p>
+<table class="table2">
+  <tr>
+    <th>Firstname</th><th>Lastname</th><th>Age</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Jill</td><td>Smith</td><td>50</td>
+  </tr>
+  <tr>
+    <td>Jackson</td><td>94</td>
+  </tr>
+  <tr>
+    <td>John</td><td>Doe</td><td>80</td>
+  </tr>
+</table>
+<hr>
+<table style="width:100%;border: 3px dashed;border-radius: 12px;border-color: rgb(3, 3, 3);" class="table3">
+  <tr>
+    <th colspan="2">Name</th><th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td><td>Smith</td><td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td><td>Jackson</td><td rowspan="2">94</td>
+  </tr>
+  <tr>
+    <td>John</td><td>Doe</td>
+  </tr>
+</table>
+
+</body>
+</html>
+

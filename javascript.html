@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title> Javascript </title>
+   <style>
+    #styling{
+       font-weight:800;
+
+    }
+   </style>
+  </head>
+  <body>
+    <h1> Javascript </h1>
+    <p>javascript to display date and time.</p>
+    <button type="button" onclick="document.getElementById('frstjs').innerHTML = Date()">click me to display date and time</button>
+    <p id="frstjs">displayed here</p><hr>
+    <p>The Script tag</p>
+    <p>javascript used to change text </p>
+    <p id="js2">thanks.</p>
+    <script>
+        document.getElementById("js2").innerHTML="hey hello";
+    </script>
+    <hr>
+    <p>A taste of javascript</p>
+    <h1 id="styling">you are beautiful</h1>
+    <script>
+        function changecolors1(){
+            document.getElementById("styling").style.color="red";
+        }
+    </script>
+    <script>
+        function changecolors2(){
+            document.getElementById("styling").style.color="orange";
+        }
+    </script>
+    <script>
+        function changecolors3(){
+            document.getElementById("styling").style.color="blue";
+        }
+    </script>
+    <script>
+        function changecolors4(){
+            document.getElementById("styling").style.color="darkgreen";
+        }
+    </script>
+    <script>
+        function changecolors5(){
+            document.getElementById("styling").style.color="skyblue";
+        }
+    </script>
+    <button type="button" onclick="changecolors1()">red color</button>
+    <button type="button" onclick="changecolors2()">orange color</button>
+    <button type="button" onclick="changecolors3()">blue color</button>
+    <button type="button" onclick="changecolors4()">darkgreen color</button>
+    <button type="button" onclick="changecolors5()">skyblue color</button>
+    <hr>
+    <script>
+        function bgchange1(){
+            document.getElementById("styling").style.backgroundColor = "red";
+            document.getElementById("styling").style.color = "white";   
+        }
+    </script>
+    <script>
+        function bgchange2(){
+            document.getElementById("styling").style.backgroundColor="yellow";     
+            document.getElementById("styling").style.color="red";     
+        }
+    </script>
+    <script>
+        function bgchange3(){
+            document.getElementById("styling").style.backgroundColor="skyblue";     
+            document.getElementById("styling").style.color="red";     
+        }
+    </script>
+    <button type="button" onclick="bgchange1()">background red</button>
+    <button type="button" onclick="bgchange2()">background yellow</button>
+    <button type="button" onclick="bgchange3()">background skyblue</button><hr>
+    <img src="https://lh3.googleusercontent.com/nIx94GytGj3j7LNsT4rPkzKts7aDDm-kP4UDcCuRsUj_fKvhbBr4ZKQVUiW2Z5Eu8zqhgBD2hHcV395SpOBcAQ_vaBvZQYss7ptGbQQofio-POrlacQQwONRJQVnxAn76Sj1hNNhS0AH7cnJ7WiDZG9hAqXR5zfHD7iHZNkvmrlxNnAixjewKWELgjnmTd_K9prsw5hwsu6pkoG4KXzYUwwIyky_xxDqNSs50BE9S3DtX-TB-N5nkZmzom_F65SaIAYtiaUIl940pkUSQ_XFHjj9L7RI1Ia2juVASgfLVbo56gucepwba4ifIG5wqtiAjul1_Z0YbR68hG4Y7Elpi5Ihpkaqg8EIGaFigtvD3zjSWQ1MglxSaD_WPWac8UZgZEmQGsBZUsMzE3_KEIlbSOpr3AVAxyvzu1STRAHne38s9FuN9aKxIJJYajg83xEjDbdsSAUXKOOemCLK3fu_RK8axOxlMZO1-o_daRylNJ3-T4k_k3CMuKXwHGtTxZUBXAQeXVLNS3JrbVQLAefCfOY_VcQOLR7zNdmv58QhB1ZJ9mMdjjw5--f4XONu85H6D9HjMXzeRSevs0pPMxj53SWrEf7lJSOaOxI3tXPQfPDVqRB8HRYpXi-55cyISIahoEUGf8SaKgVi0SCl-SrN9vEhST3k_OGbPjJkV1FafPztFWUMIkXFkZO1WYdsh6VPEejoEK4SnWHwIzd1G6lCRVCJjOlo_al6raK7TCLEKmsXAf2dhQ3596YG3yNDMOzMWidfrQvMnxaB6JKp3tacSmKycjC2yT5R=w537-h914-no?authuser=0" id="bulb" alt="bulbimage" width="100" height="150">
+    
+   <button type="button" onclick="bulbon()">Turn on</button>
+   <button type="button" onclick="bulboff()">Turn off</button>
+
+    <script>
+        function bulbon(){
+            document.getElementById("bulb").src='https://lh3.googleusercontent.com/1Cb3RamNplQWzBdTYdm8DrN7hAMLPzCuMqGoo7G9FfrwpiUdQmjO88me0q5WBh6zmbvL_klMQZxGiTRcd4tYouYUJbiXYfKkdmpK_C__itj2ZK3vcAa4zcyvaJ301v6pjF2po8q677mSS52HXOiAbN6u51flC5zUpEX5mtJCc3umSJkqtDC2nOJbjqEHY5F0YpG-TZZgWU935eamXyBieCWIv5nY_mQxaL7he2f7IWU6Vs0bawDC0J1tzuw312JEqGB-hAzqwQ4VOwUeGgfowvnHp857hb6dvlCjHripZbfCLeTCu4huhWQb4bpGnZ7DeRLoQZp5MSOhKUjGegtLf9TDWs69Bb1kz6dshkQXxeTfq1EeVRQq_wpbancIyoBZR-XJPvScrDJr4FCLNh3Hs_kbossOMBnNnYxo6-edaYCgZ4kQkU248lw9fpgtbDqXlC0rgvyZbjJd5Y8UKPYGWKg-llPCzv3z-LIm8WXvNhaLLnurmTgksuV3REyLr_vr3YmQzoT43PCgUGjEgHs75ChEKFccG2lO3Ju1fGFyXlY2NKcTp0gfcn3fzvF1qRGf01FtLPwXdz0cI9tojbVR8Hrhd0meI6EhR4vXwsituhfd41NxxyKYQa9NMDaN48zFhdvyhwaUnat1MXHjx9wWf_4xnYYQjBp0BPH7PN0GPtESqbThTCauWd8WfMO4sRLG2nP3fdbSb61V7ceQLw467gsVNIAXyReFqHF2HTBQo-THxBRRvOb81azGd_BhCJaFOzOp8h5FT2uQ7PxwayGy4441wNPd50sR=w539-h914-no?authuser=0';
+        }
+    </script>
+    <script>
+        function bulboff(){
+            document.getElementById("bulb").src="https://lh3.googleusercontent.com/nIx94GytGj3j7LNsT4rPkzKts7aDDm-kP4UDcCuRsUj_fKvhbBr4ZKQVUiW2Z5Eu8zqhgBD2hHcV395SpOBcAQ_vaBvZQYss7ptGbQQofio-POrlacQQwONRJQVnxAn76Sj1hNNhS0AH7cnJ7WiDZG9hAqXR5zfHD7iHZNkvmrlxNnAixjewKWELgjnmTd_K9prsw5hwsu6pkoG4KXzYUwwIyky_xxDqNSs50BE9S3DtX-TB-N5nkZmzom_F65SaIAYtiaUIl940pkUSQ_XFHjj9L7RI1Ia2juVASgfLVbo56gucepwba4ifIG5wqtiAjul1_Z0YbR68hG4Y7Elpi5Ihpkaqg8EIGaFigtvD3zjSWQ1MglxSaD_WPWac8UZgZEmQGsBZUsMzE3_KEIlbSOpr3AVAxyvzu1STRAHne38s9FuN9aKxIJJYajg83xEjDbdsSAUXKOOemCLK3fu_RK8axOxlMZO1-o_daRylNJ3-T4k_k3CMuKXwHGtTxZUBXAQeXVLNS3JrbVQLAefCfOY_VcQOLR7zNdmv58QhB1ZJ9mMdjjw5--f4XONu85H6D9HjMXzeRSevs0pPMxj53SWrEf7lJSOaOxI3tXPQfPDVqRB8HRYpXi-55cyISIahoEUGf8SaKgVi0SCl-SrN9vEhST3k_OGbPjJkV1FafPztFWUMIkXFkZO1WYdsh6VPEejoEK4SnWHwIzd1G6lCRVCJjOlo_al6raK7TCLEKmsXAf2dhQ3596YG3yNDMOzMWidfrQvMnxaB6JKp3tacSmKycjC2yT5R=w537-h914-no?authuser=0";
+        }
+    </script>&nbsp;
+    <img id="sri1" src="https://lh3.googleusercontent.com/abArSSYTBlUZA2qRHd_ud-Tdl60yKnx3u7vEzSG0H_bhhOM2wyoAloj1dKtX7vJ63Pj_T9kdqZG1EE245cxdX9te2KwXLRXuSc_3l_ZxQuyk8LJDb1IFXbaw-dQ3CSsLf5Q6otewjOev1WbFCasjtnPLu90AXtBE84ssRIlYj3OpuruXf6DSEwr-z19ojXvbj516ush0LaHzikfeL4aKreCMwR9sCR9vXcLBWJAlgYBcsGi7a4oObFfH_GxPxnuBX7niYDKA-aLT17CRu02UJgZCAU8uC8Igefy_S1sFOC16iMLcA1Dn9wVg-EPtIIS1LxgvtxQqm1zS8KNTRZ8MEtrALllWiPcdb1y3VsRJRcAswNw28t0PSQX4ojpW0_53fcMJWTWGxhI-j_oNshbBalIw9JVmEe8HfRdbqH468GSKrXzZVfymss2hj8N9N3ceakYgDUYy41hcB8z5Q1sbdewALdfmhEf70jlLqf0Y5wP522b08etPMTMCQV5pFOWSM6E2_sMutEHAwhZb1yfJrPpwabpX8c662qusHT_exgAVIpU_cbr6Gtg7Y4JZkaHF8CHINq4nRol3JeLVhlhcNwcssJnyR_IBUA1cc7htbfF8bi3HBOHTlBdV_3JymU9wgcWELs4LJf5gzt8-nTBfUf4u04BxoG6n247cf_6CgwCxfxCwELMl6kEq-p-MyvBrAtxBgvyc14VskzCmClTGLc3xA7rOjw0DNLgY2ItWWDhXKLGxyPVCwCqd4sM-vw=w610-h914-no?authuser=0" 
+    alt="sri_image1" height="450" width="300">
+    <button type="button" onclick="imgedit()">edit</button>
+    <button type="button" onclick="imgnoedit()">remove edit</button>
+    <script>
+        function imgedit(){
+            document.getElementById("sri1").src='https://lh3.googleusercontent.com/sSBG8OWSussHeR_i7N4c0KQJdUA1fxYKZwzoolgweoeJKErg494gAgo974Kf9b782BJzj-95SJ26I4uw2ZEU5q8ef0ZPz1fnrlq950UcgdWfVRd3iA0cd9hGeLSgD18TOuqplhEs5RQXMxkq611jJe7CdU2Yhfr9DDhwFBBrP8wkDDObFkwK-H-zGJZ2sjkFO0BNbrU6e-qy81MegicdgfRCOUhmeqNAlG7PRut2loVe6mscxCaL3t4LlMoZs6B1Gi-nEMRL5C2D2M6wJOr0gBZLeQc7SWQNZGxl_J-6gxOtCmr2Pj0QIR3ruO4sjWNF6MOjZ-lOJk2a86DLj9fC-BUoY9ZmyiQoXlGTDoxF-ZSNjBfSYCIS2Sob0cLqLvw2-Jx58cYw3btGN8qsNAU5PjlnewU9vg5Haxmm4UEwRN5QDU4ehgRyrlV4fFK2KrQHH8NrULwzuiRrECYi-GuZQXdJ74jXgJd6t4TxhdpsAacGh-J8o1TWfXWLyYJOJVLYMqc1uSgaq1dl-PUO69dqPGH_Q-8IX5cFwYTWetazezzaNqWxz4KwkWXiTN8AlWPr0sDaFgqhHMNPc_LgdnOjK-6wkZD81Mv7LL8Y0OQ6kotVvXMH9L3L56T7FH6fQomdcW5bMIV95nYj63FtPUOQSq1NaqjhiaDvE0VG_9Z4XW_-1NakfLfFDLP4sQKZcSDpu3etpUKijNBoSdsapCmp09X2CGBQxaXSZxdIzMprNcxZzu3QYrg1v1OyN3KU_g=w610-h914-no?authuser=0';
+
+        }
+    </script>
+    <script>
+        function imgnoedit(){
+            document.getElementById("sri1").src='https://lh3.googleusercontent.com/abArSSYTBlUZA2qRHd_ud-Tdl60yKnx3u7vEzSG0H_bhhOM2wyoAloj1dKtX7vJ63Pj_T9kdqZG1EE245cxdX9te2KwXLRXuSc_3l_ZxQuyk8LJDb1IFXbaw-dQ3CSsLf5Q6otewjOev1WbFCasjtnPLu90AXtBE84ssRIlYj3OpuruXf6DSEwr-z19ojXvbj516ush0LaHzikfeL4aKreCMwR9sCR9vXcLBWJAlgYBcsGi7a4oObFfH_GxPxnuBX7niYDKA-aLT17CRu02UJgZCAU8uC8Igefy_S1sFOC16iMLcA1Dn9wVg-EPtIIS1LxgvtxQqm1zS8KNTRZ8MEtrALllWiPcdb1y3VsRJRcAswNw28t0PSQX4ojpW0_53fcMJWTWGxhI-j_oNshbBalIw9JVmEe8HfRdbqH468GSKrXzZVfymss2hj8N9N3ceakYgDUYy41hcB8z5Q1sbdewALdfmhEf70jlLqf0Y5wP522b08etPMTMCQV5pFOWSM6E2_sMutEHAwhZb1yfJrPpwabpX8c662qusHT_exgAVIpU_cbr6Gtg7Y4JZkaHF8CHINq4nRol3JeLVhlhcNwcssJnyR_IBUA1cc7htbfF8bi3HBOHTlBdV_3JymU9wgcWELs4LJf5gzt8-nTBfUf4u04BxoG6n247cf_6CgwCxfxCwELMl6kEq-p-MyvBrAtxBgvyc14VskzCmClTGLc3xA7rOjw0DNLgY2ItWWDhXKLGxyPVCwCqd4sM-vw=w610-h914-no?authuser=0';
+        }
+    </script>
+    
+
+  </body>
+</html>
